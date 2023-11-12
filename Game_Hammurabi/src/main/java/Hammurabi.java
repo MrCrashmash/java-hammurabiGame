@@ -5,11 +5,18 @@ package main.java;
 
 import static main.java.variables.GameVariables.*;
 import static main.java.constants.GameConstants.*;
+import main.java.logic.Logic;
+
+import main.java.GUI.*;
 
 public class Hammurabi {
 
     //================================================================== main
     public static void main(String[] args) {
+        Logic.starter();
+        GUI gui = new GUI();
+        gui.startGUI();
+        /*
         //... Run the simulation for 5 years or until everyone starves.
         while (k_peasants > 0 && k_year <= 5) {
             displayStatus();              // Show status of kingdom every year.
@@ -27,6 +34,7 @@ public class Hammurabi {
             System.out.println("Congratuations, you survived for 5 years!");
         }
         displayStatus();
+        */
     }
 
     //========================================================== displayStatus
@@ -117,7 +125,7 @@ public class Hammurabi {
 
         int yieldPerAcre = randomWithRange(MIN_RANGE_YIELD ,MAX_RANGE_YIELD );  // Number from 2 to 6
 
-        k_harvest        = yieldPerAcre * acresPlanted;
+        k_harvest  = yieldPerAcre * acresPlanted;
 
         //... Compute new amount of grain after the harvest.
         k_grain += k_harvest;  // New amount of grain in storage.
@@ -127,5 +135,7 @@ public class Hammurabi {
         int range = (max - min) + 1;
         return (int)(Math.random() * range) + min;
     }
+
+
 
 }
