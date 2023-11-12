@@ -11,5 +11,10 @@ public class GameVariables {
     public static int k_harvest;  // Last harvest in bushels.
     public static int k_peasants; // Number of peasants.
     public static int k_acre_price; // the price for an acre
+    public static int k_starved; // How many Peasants starved
+    public static int k_immigrated; // How many Peasants came to the Kingdom
+    public static boolean isPlague; // Is there a Plague?
+    public static String plagueText = "A horrible plague struck! Half the population died! "; // Is there a Plague?
+    public static int ratsAte; // How much did the Rates ate?
 
 }
