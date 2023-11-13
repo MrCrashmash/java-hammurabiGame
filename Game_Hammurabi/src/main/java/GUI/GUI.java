@@ -69,11 +69,11 @@ public class GUI implements ActionListener{
         panel.add(trade_Label);
 
         trade_Text = new JTextField();
-        trade_Text.setBounds(400,235,100,15);
+        trade_Text.setBounds(410,235,100,15);
         panel.add(trade_Text);
 
         trade_subLabel = new JLabel("negative amount for selling");
-        trade_subLabel.setBounds(400,250,300,15);
+        trade_subLabel.setBounds(410,250,300,15);
         trade_subLabel.setFont(new Font("Arial", Font.PLAIN, 10));
         panel.add(trade_subLabel);
 
@@ -84,32 +84,32 @@ public class GUI implements ActionListener{
         panel.add(feed_Label);
 
         feed_Text = new JTextField();
-        feed_Text.setBounds(400, 285, 100, 15);
+        feed_Text.setBounds(410, 285, 100, 15);
         panel.add(feed_Text);
 
         feed_subLabel = new JLabel("each citizen needs at least "+MIN_GRAIN_TO_SURVIVE+" bushels a year");
-        feed_subLabel.setBounds(400,300,300,15);
+        feed_subLabel.setBounds(410,300,300,15);
         feed_subLabel.setFont(new Font("Arial", Font.PLAIN, 10));
         panel.add(feed_subLabel);
 
         // ================= Plant Seeds =========================
-        plant_Label = new JLabel("How many bushels do you wish to feed your people?");
+        plant_Label = new JLabel("How many bushels do you wish to use for planting acres?");
         plant_Label.setBounds(20, 335, 400, 15);
         plant_Label.setFont(new Font("Arial", Font.PLAIN, 15));
         panel.add(plant_Label);
 
         plant_Text = new JTextField();
-        plant_Text.setBounds(400, 335, 100, 15);
+        plant_Text.setBounds(410, 335, 100, 15);
         panel.add(plant_Text);
 
         plant_subLabel = new JLabel("each acre takes "+SEED_REQUIRED_PER_ACRE+" seed");
-        plant_subLabel.setBounds(400,350,300,15);
+        plant_subLabel.setBounds(410,350,300,15);
         plant_subLabel.setFont(new Font("Arial", Font.PLAIN, 10));
         panel.add(plant_subLabel);
 
         // ================= Submit Button =========================
         submit_Button = new JButton("Submit");
-        submit_Button.setBounds(400,385,80,25);
+        submit_Button.setBounds(410,385,80,25);
         submit_Button.addActionListener(new GUI());
         panel.add(submit_Button);
 
