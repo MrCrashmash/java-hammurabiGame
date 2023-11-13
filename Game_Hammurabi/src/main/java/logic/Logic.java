@@ -235,18 +235,18 @@ public class Logic {
     }
 
     /**
-     * This method is randomly deciding with a given percentage if there is a plague struck or not
+     * This method is randomly deciding with a given percentage (Plague_Chance) if there is a plague struck or not
      * @return boolean true there is a plague
      *                 false otherwise.
      */
     private static boolean isPlague(){
-        int plague = randomWithRange(MIN_RANGE_PERCENTAGE, MAX_RANGE_PERCENTAGE);
+        int plague = randomWithRange(0, 999);
         isPlague = plague < PLAGUE_CHANCE * 10;
         return isPlague;
     }
 
     /**
-     * This Method is randomly deciding with a given percentage how much the rats ate this year.
+     * This Method is randomly deciding with a given percentage (RAT_MAX_AMOUNT) how much the rats ate this year.
      * @return int the amount the rats ate
      */
     private static int howMuchRatsAte(){
